@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    background-color: rgb(206, 206, 206);
+}
+
+.mainContainer{
+    width: 100vw;
+    height: 100vh;
+}
+
+.header{
+    width: 100%;
+    height: 10%;
+    background-color: #8A39E1;
+}
+
+.content{
+    width: 100%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.sideNav{
+    width: 100%;
+    height: 100%;
+    background-color: #B667F1;
+}
+
+.postContent{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center
+}
+
+.createPostForm{
+    padding: 10px;
+    width: 80%;
+    height: 200px;
+    background-color: beige;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 5%;
+    box-shadow: 0 0 10px gray;
+}
+
+.userInfo{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+
+.userInfo img{
+    width: 70%;
+    border-radius: 50%;
+}
+
+.userInput{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+}
+
+#postInput{
+    border: none;
+    font-size: large;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#postBtn{
+    height: 40%;
+    margin-top: 28%;
+    width: 70%;
+    font-size: large;
+    font-weight: bold;
+    color: #8A39E1;
+    border: none;
+    background-color: rgb(216, 216, 216);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#postBtn:hover{
+    background-color: #8A39E1;
+    color: white;
+}
+
+@media (max-width:700px) {
+    .content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .userInfo img{
+        width: 50px;
+    }
+    .userInfo h2{
+        font-size: large;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    .sideNav{
+        display: none;
+    }
+    #postBtn{
+        width: 100%;
+        margin-top: 65%;
+    }
+
+}
