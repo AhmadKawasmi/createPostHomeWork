@@ -8,6 +8,10 @@ body{
     height: 100vh;
 }
 
+.origi{
+    height: 250px;
+}
+
 .header{
     width: 100%;
     height: 10%;
@@ -24,7 +28,8 @@ body{
 .sideNav{
     width: 100%;
     height: 100%;
-    background-color: #B667F1;
+    background-color: beige;
+    box-shadow: 0 0 10px gray;
 }
 
 .postContent{
@@ -37,12 +42,12 @@ body{
 .createPostForm{
     padding: 10px;
     width: 80%;
-    height: 200px;
     background-color: beige;
     display: grid;
     grid-template-rows: 1fr 1fr;
     margin-top: 5%;
     box-shadow: 0 0 10px gray;
+    margin-bottom: 5%;
 }
 
 .userInfo{
@@ -109,5 +114,96 @@ body{
         width: 100%;
         margin-top: 65%;
     }
+    .btnsDiv .btns{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .commentDivForm .commentName{
+        margin-top: -50px;
+    }
+    .createPostForm .submit{
+        width: 100%;
+        margin-left: 0px;
+    }
+}
 
+.btnsDiv{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+.btns{
+    width: 15%;
+    height: 25px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: white;
+    color: gray;
+    transition: 0.2s;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.commentDivForm{
+    background-color: rgb(230, 230, 230);
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    box-shadow: 0 0 2px rgb(143, 143, 143);
+}
+
+.commentImg{
+    width: 40px;
+    margin-bottom: 5%;
+    border-radius: 50%;
+}
+
+.commentName{
+    margin-top: -80px;
+    margin-left: 60px;
+    font-size: large;
+}
+.commentContent{
+    padding-bottom: 3%;
+    padding-top: 1%;
+    padding-left: 4%;
+}
+
+
+.commentInput{
+    display: none;
+    margin-top: 15px;
+    width: 75%;
+    height: 30px;
+    border: none;
+    padding-left: 10px;
+    margin-bottom: 2%;
+}
+
+.commentSubmit{
+    display: none;
+    height: 20px;
+    margin-right: 5%;
+    float: right;
+}
+
+.submit{
+    width: 15%;
+    height: 25px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: white;
+    color: gray;
+    transition: 0.2s;
+    font-size: large;
+    cursor: pointer;
+}
+
+.submit:hover{
+    color: white;
+    background-color: #8A39E1;
 }
