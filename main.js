@@ -26,6 +26,7 @@ const createNewPost = function(){
     commentSubmit.classList.add('commentSubmit')
     commentSubmit.classList.add('submit')
 
+    
     postContent.innerText = text
     img.src = "images/userImg.png"
     userName.innerText = "Ahmad Kawasmi"
